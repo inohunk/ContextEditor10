@@ -24,12 +24,10 @@ namespace ContextEditor10.Classes
         {
             if (!Directory.Exists(PATH_ROOT))
             {
-                MessageBox.Show("Sussec");
                 Directory.CreateDirectory(PATH_ROOT);
             }
             if (!Directory.Exists(PATH_BACKUPS))
             {
-                MessageBox.Show("Sussec");
 
                 Directory.CreateDirectory(PATH_BACKUPS);
             }
@@ -43,7 +41,7 @@ namespace ContextEditor10.Classes
             }
         }
         //Directories with settings
-        const string PATH_ROOT = "C:\\Users\\Hunkel\\AppData\\Roaming\\ContextEditor\\";
+        const string PATH_ROOT = "%AppData%\\ContextEditor\\";
         const string PATH_BACKUPS = PATH_ROOT + "Backups\\";
 
         private ObservableCollection<string> contextMenuData = new ObservableCollection<string>();
